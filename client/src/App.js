@@ -1,24 +1,32 @@
 import React from "react";
-import logo from "./logo.svg";
+import { Route, Routes } from "react-router-dom";
+import { HashRouter as Router } from "react-router-dom";
 import "./App.css";
+import "@fontsource/roboto/300.css";
+import "@fontsource/roboto/400.css";
+import "@fontsource/roboto/500.css";
+import "@fontsource/roboto/700.css";
 
-import Contact from "./components/Contact";
-import Home from "./components/Home";
+import Contact from "./pages/Contact";
+import Home from "./pages/Home";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
-import Projects from "./components/Projects";
-import "./index.css";
+import Projects from "./pages/Projects";
+import Resume from "./pages/Resume";
 
 function App() {
   return (
     <Router>
+      <Navbar />
       <div>
-        <Route path="/Home" element={<Search />} />
-        <Route path="/Contact" element={<Search />} />
-        <Route path="/Footer" element={<Search />} />
-        <Route path="/Navbar" element={<Search />} />
-        <Route path="/Projects" element={<Search />} />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Contact" element={<Contact />} />
+          <Route path="/Projects" element={<Projects />} />
+          <Route path="/Resume" element={<Resume />} />
+        </Routes>
       </div>
+      <Footer />
     </Router>
   );
 }
