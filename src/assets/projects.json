@@ -1,32 +1,32 @@
 [
   {
-    "name": "test",
-    "url": "google.com",
-    "description": "text text text"
+    "name": "Howdy Neighbor",
+    "url": "https://github.com/thatthembritt/howdyNeighbor",
+    "description": "Project 3 assignment for University of Denver Coding Bootcamp"
   },
   {
-    "name": "test",
-    "url": "google.com",
-    "description": "text text text"
+    "name": "E-Commerce Application",
+    "url": "https://github.com/thatthembritt/eCommerceApplication",
+    "description": "In this project I built the back end for an e-commerce site."
   },
   {
-    "name": "test",
-    "url": "google.com",
-    "description": "text text text"
+    "name": "ReadMe Generator",
+    "url": "https://github.com/thatthembritt/ReadMe-Generator",
+    "description": "This project is a ReadMe generator-perfect for completing your repo!"
   },
   {
-    "name": "test",
-    "url": "google.com",
-    "description": "text text text"
+    "name": "X-Men Quiz",
+    "url": "https://github.com/thatthembritt/X-Men-JavaScript-Quiz",
+    "description": "This is a timed quiz I created about my favorite comic book characters-the X-Men."
   },
   {
-    "name": "test",
-    "url": "google.com",
-    "description": "text text text"
+    "name": "Webaboos",
+    "url": "https://jerimiahk.github.io/WEBaboos/",
+    "description": "Project 1 assignment for University of Denver Coding Bootcamp"
   },
   {
-    "name": "test",
-    "url": "google.com",
-    "description": "text text text"
+    "name": "Guardian Guide",
+    "url": "https://github.com/mo-aden/Guardian-Guide",
+    "description": "Project 2 assignment for University of Denver Coding Bootcamp"
   }
 ]

@@ -1,16 +1,17 @@
 import React from "react";
-import { Box, Typography, Container } from "@mui/material";
+import { Typography, Container } from "@mui/material";
 import { Link } from "react-router-dom";
+import Grid from "@mui/material/Unstable_Grid2";
 
 const Navbar = () => {
   return (
-    <Container>
-      <Box sx={{ width: 2 / 5 }}>
+    <Grid container>
+      <Grid xs={6}>
         <Typography component="h1" variant="h3">
           Britt Boyd
         </Typography>
-      </Box>
-      <Box sx={{ width: 1 / 5 }}>
+      </Grid>
+      <Grid xs={6}>
         <Typography component="span" variant="body1">
           <Link to="/Projects">Projects</Link>
         </Typography>
@@ -20,8 +21,8 @@ const Navbar = () => {
         <Typography component="span" variant="body1">
           <Link to="/Contact">Contact</Link>
         </Typography>
-      </Box>
-    </Container>
+      </Grid>
+    </Grid>
   );
 };
 
