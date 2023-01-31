@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <Grid container>
       <Grid xs={6}>
-        <Typography component="h1" variant="h3">
+        <Typography id="brittboyd" component="h1" variant="h3">
           Britt Boyd
         </Typography>
       </Grid>

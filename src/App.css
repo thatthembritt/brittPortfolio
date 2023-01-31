@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap"rel="stylesheet");
+
+body {
+  font-family: "Odibee Sans", cursive;
+}
+
 .App {
   text-align: center;
 }
@@ -13,10 +19,16 @@
   }
 }
 
+#brittboyd {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
 #navlink {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+  margin-top: 20px;
 }
 
 #navbarcontainer {
@@ -24,6 +36,7 @@
   flex-direction: row;
   justify-content: space-evenly;
 }
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
