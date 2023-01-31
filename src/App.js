@@ -8,7 +8,7 @@ import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 
 import Contact from "./pages/Contact";
-import Home from "./pages/Home";
+import About from "./pages/About";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Projects from "./pages/Projects";
@@ -20,7 +20,7 @@ function App() {
       <Navbar />
       <div>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<About />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/Projects" element={<Projects />} />
           <Route path="/Resume" element={<Resume />} />

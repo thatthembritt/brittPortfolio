@@ -11,14 +11,17 @@ const Navbar = () => {
           Britt Boyd
         </Typography>
       </Grid>
-      <Grid xs={6}>
-        <Typography component="span" variant="body1">
+      <Grid xs={6} id="navbarcontainer">
+        <Typography component="span" variant="body1" id="navlink">
+          <Link to="/">About</Link>
+        </Typography>
+        <Typography component="span" variant="body1" id="navlink">
           <Link to="/Projects">Projects</Link>
         </Typography>
-        <Typography component="span" variant="body1">
+        <Typography component="span" variant="body1" id="navlink">
           <Link to="/Resume">Resume</Link>
         </Typography>
-        <Typography component="span" variant="body1">
+        <Typography component="span" variant="body1" id="navlink">
           <Link to="/Contact">Contact</Link>
         </Typography>
       </Grid>
