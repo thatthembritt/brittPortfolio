@@ -12,12 +12,12 @@ const Projects = () => {
       {projects.map((project, index) => {
         return (
           <Card key={index}>
-            <CardContent>
+            <CardContent id="cardBackground">
               <Typography component="h6">{project.name}</Typography>
               <a href={project.url}>
                 <Typography>Link</Typography>
               </a>
-              <Typography color="purple">{project.description}</Typography>
+              <Typography color="black">{project.description}</Typography>
             </CardContent>
           </Card>
         );

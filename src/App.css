@@ -60,3 +60,7 @@ body {
     transform: rotate(360deg);
   }
 }
+
+#cardBackground {
+  background-color: #fcc931;
+}
