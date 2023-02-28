@@ -19,6 +19,11 @@ body {
   }
 }
 
+#about {
+  display: flex;
+  justify-content: center;
+}
+
 #brittboyd {
   margin-top: 20px;
   margin-left: 20px;
