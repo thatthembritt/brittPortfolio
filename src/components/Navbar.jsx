@@ -7,21 +7,46 @@ const Navbar = () => {
   return (
     <Grid container>
       <Grid xs={6}>
-        <Typography id="brittboyd" component="h1" variant="h3">
+        <Typography
+          fontFamily="Odibee Sans"
+          id="brittboyd"
+          component="h1"
+          variant="h3"
+        >
           Britt Boyd
         </Typography>
       </Grid>
       <Grid xs={6} id="navbarcontainer">
-        <Typography component="span" variant="body1" id="navlink">
+        <Typography
+          fontFamily="Odibee Sans"
+          component="span"
+          variant="body1"
+          id="navlink"
+        >
           <Link to="/">About</Link>
         </Typography>
-        <Typography component="span" variant="body1" id="navlink">
+        <Typography
+          fontFamily="Odibee Sans"
+          component="span"
+          variant="body1"
+          id="navlink"
+        >
           <Link to="/Projects">Projects</Link>
         </Typography>
-        <Typography component="span" variant="body1" id="navlink">
+        <Typography
+          fontFamily="Odibee Sans"
+          component="span"
+          variant="body1"
+          id="navlink"
+        >
           <Link to="/Resume">Resume</Link>
         </Typography>
-        <Typography component="span" variant="body1" id="navlink">
+        <Typography
+          fontFamily="Odibee Sans"
+          component="span"
+          variant="body1"
+          id="navlink"
+        >
           <Link to="/Contact">Contact</Link>
         </Typography>
       </Grid>

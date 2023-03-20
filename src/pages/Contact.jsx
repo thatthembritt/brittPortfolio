@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Typography, Grid, TextField, Button } from "@mui/material";
 
 const Contact = function () {
   const [formInfo, setFormInfo] = useState({
@@ -12,27 +13,63 @@ const Contact = function () {
   };
 
   return (
-    <form id="contact-form" onSubmit={handleFormSubmit}>
-      <div className="form-group">
-        <label htmlFor="name">Name</label>
-        <input type="text" className="form-control" />
-      </div>
-      <div className="form-group">
-        <label htmlFor="exampleInputEmail1">Email Address</label>
-        <input
-          type="email"
-          className="form-control"
-          aria-describedby="emailHelp"
-        />
-      </div>
-      <div className="form-group">
-        <label htmlFor="message">Message</label>
-        <textarea className="form-control" rows="5"></textarea>
-      </div>
-      <button type="submit" className="btn btn-primary">
-        Submit
-      </button>
-    </form>
+    <Grid container justifyContent="center">
+      <Grid item xs={12} md={6}>
+        <Typography component="h4" variant="h4" fontFamily="Odibee Sans">
+          Contact Me
+        </Typography>
+        <form id="contact-form" onSubmit={handleFormSubmit}>
+          <Grid container spacing={2}>
+            <Grid item xs={12}>
+              <TextField
+                required
+                fullWidth
+                id="name"
+                label="Name"
+                variant="outlined"
+                value={formInfo.name}
+                onChange={(e) =>
+                  setFormInfo({ ...formInfo, name: e.target.value })
+                }
+              />
+            </Grid>
+            <Grid item xs={12}>
+              <TextField
+                required
+                fullWidth
+                id="email"
+                label="Email"
+                variant="outlined"
+                value={formInfo.email}
+                onChange={(e) =>
+                  setFormInfo({ ...formInfo, email: e.target.value })
+                }
+              />
+            </Grid>
+            <Grid item xs={12}>
+              <TextField
+                required
+                fullWidth
+                id="message"
+                label="Message"
+                multiline
+                rows={5}
+                variant="outlined"
+                value={formInfo.message}
+                onChange={(e) =>
+                  setFormInfo({ ...formInfo, message: e.target.value })
+                }
+              />
+            </Grid>
+            <Grid item xs={12}>
+              <Button type="submit" variant="contained">
+                Submit
+              </Button>
+            </Grid>
+          </Grid>
+        </form>
+      </Grid>
+    </Grid>
   );
 };
 

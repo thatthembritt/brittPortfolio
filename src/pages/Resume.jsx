@@ -7,7 +7,7 @@ const Resume = () => {
     <>
       <p>Resume</p>
       <a href={resume} target="_blank" rel="noreferrer">
-        <Typography>Link</Typography>
+        <Typography fontFamily="Odibee Sans">Link</Typography>
       </a>
     </>
   );

@@ -6,18 +6,22 @@ const Projects = () => {
   console.log(projects);
   return (
     <>
-      <Typography component="h4" variant="h3">
+      <Typography fontFamily="Odibee Sans" component="h4" variant="h3">
         Projects
       </Typography>
       {projects.map((project, index) => {
         return (
           <Card key={index}>
             <CardContent id="cardBackground">
-              <Typography component="h6">{project.name}</Typography>
+              <Typography fontFamily="Odibee Sans" component="h6">
+                {project.name}
+              </Typography>
               <a href={project.url}>
-                <Typography>Link</Typography>
+                <Typography fontFamily="Odibee Sans">Link</Typography>
               </a>
-              <Typography color="black">{project.description}</Typography>
+              <Typography fontFamily="Odibee Sans" color="black">
+                {project.description}
+              </Typography>
             </CardContent>
           </Card>
         );
