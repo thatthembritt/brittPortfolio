@@ -11,9 +11,17 @@ const Navbar = () => {
           fontFamily="Odibee Sans"
           id="brittboyd"
           component="h1"
-          variant="h3"
+          variant="h1"
         >
-          Britt Boyd
+          Britt
+        </Typography>
+        <Typography
+          fontFamily="Odibee Sans"
+          component="h1"
+          variant="h1"
+          id="brittboyd"
+        >
+          Boyd
         </Typography>
       </Grid>
       <Grid xs={6} id="navbarcontainer">
@@ -23,7 +31,9 @@ const Navbar = () => {
           variant="body1"
           id="navlink"
         >
-          <Link to="/">About</Link>
+          <Link to="/" style={{ textDecoration: "none" }}>
+            About
+          </Link>
         </Typography>
         <Typography
           fontFamily="Odibee Sans"
@@ -31,7 +41,9 @@ const Navbar = () => {
           variant="body1"
           id="navlink"
         >
-          <Link to="/Projects">Projects</Link>
+          <Link to="/Projects" style={{ textDecoration: "none" }}>
+            Projects
+          </Link>
         </Typography>
         <Typography
           fontFamily="Odibee Sans"
@@ -39,7 +51,9 @@ const Navbar = () => {
           variant="body1"
           id="navlink"
         >
-          <Link to="/Resume">Resume</Link>
+          <Link to="/Resume" style={{ textDecoration: "none" }}>
+            Resume
+          </Link>
         </Typography>
         <Typography
           fontFamily="Odibee Sans"
@@ -47,7 +61,9 @@ const Navbar = () => {
           variant="body1"
           id="navlink"
         >
-          <Link to="/Contact">Contact</Link>
+          <Link to="/Contact" style={{ textDecoration: "none" }}>
+            Contact
+          </Link>
         </Typography>
       </Grid>
     </Grid>

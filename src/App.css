@@ -2,6 +2,8 @@
 
 body {
   font-family: "Odibee Sans", cursive;
+  color: #666769;
+  text-transform: uppercase;
 }
 
 .App {
@@ -25,7 +27,7 @@ body {
 }
 
 #brittboyd {
-  margin-top: 20px;
+  text-transform: uppercase;
   margin-left: 20px;
 }
 
@@ -34,12 +36,19 @@ body {
   align-items: center;
   flex-direction: row;
   margin-top: 20px;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #666769;
 }
 
 #navbarcontainer {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+}
+
+#footer {
+  margin-top: 100px;
 }
 
 .App-header {

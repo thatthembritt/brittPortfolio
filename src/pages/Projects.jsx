@@ -6,20 +6,31 @@ const Projects = () => {
   console.log(projects);
   return (
     <>
-      <Typography fontFamily="Odibee Sans" component="h4" variant="h3">
+      <Typography
+        fontFamily="Odibee Sans"
+        component="h4"
+        variant="h3"
+        textTransform="uppercase"
+      >
         Projects
       </Typography>
       {projects.map((project, index) => {
         return (
           <Card key={index}>
             <CardContent id="cardBackground">
-              <Typography fontFamily="Odibee Sans" component="h6">
+              <Typography
+                fontFamily="Odibee Sans"
+                component="h6"
+                color="#666769"
+              >
                 {project.name}
               </Typography>
-              <a href={project.url}>
-                <Typography fontFamily="Odibee Sans">Link</Typography>
+              <a href={project.url} target="_blank" rel="noreferrer">
+                <Typography fontFamily="Odibee Sans" color="#F3F5F9">
+                  Link
+                </Typography>
               </a>
-              <Typography fontFamily="Odibee Sans" color="black">
+              <Typography fontFamily="Odibee Sans" color="#666769">
                 {project.description}
               </Typography>
             </CardContent>
