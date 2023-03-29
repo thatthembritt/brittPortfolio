@@ -1,6 +1,7 @@
 import React from "react";
-import { Typography, Grid } from "@mui/material";
-import brittPic from "../assets/brittpic.png";
+import { Typography } from "@mui/material";
+import brittPic from "../assets/brittboyd.png";
+import Grid from "@mui/material/Unstable_Grid2";
 
 const title = "Title";
 

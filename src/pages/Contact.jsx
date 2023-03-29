@@ -27,6 +27,7 @@ const Contact = function () {
                 id="name"
                 label="Name"
                 variant="outlined"
+                sx={{ backgroundColor: "#fcc931", color: "#000000" }}
                 value={formInfo.name}
                 onChange={(e) =>
                   setFormInfo({ ...formInfo, name: e.target.value })
@@ -40,6 +41,7 @@ const Contact = function () {
                 id="email"
                 label="Email"
                 variant="outlined"
+                sx={{ backgroundColor: "#fcc931", color: "#000000" }}
                 value={formInfo.email}
                 onChange={(e) =>
                   setFormInfo({ ...formInfo, email: e.target.value })
@@ -55,6 +57,7 @@ const Contact = function () {
                 multiline
                 rows={5}
                 variant="outlined"
+                sx={{ backgroundColor: "#fcc931", color: "#000000" }}
                 value={formInfo.message}
                 onChange={(e) =>
                   setFormInfo({ ...formInfo, message: e.target.value })
@@ -62,7 +65,11 @@ const Contact = function () {
               />
             </Grid>
             <Grid item xs={12}>
-              <Button type="submit" variant="contained">
+              <Button
+                type="submit"
+                variant="contained"
+                sx={{ backgroundColor: "#fcc931", color: "#000000" }}
+              >
                 Submit
               </Button>
             </Grid>

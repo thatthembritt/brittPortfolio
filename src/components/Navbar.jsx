@@ -6,12 +6,14 @@ import Grid from "@mui/material/Unstable_Grid2";
 const Navbar = () => {
   return (
     <Grid container>
-      <Grid xs={6}>
+      <Grid md={6} xs={12}>
         <Typography
           fontFamily="Odibee Sans"
           id="brittboyd"
           component="h1"
           variant="h1"
+          color="#fcc931"
+          textAlign={{ xs: "center", md: "left" }}
         >
           Britt
         </Typography>
@@ -20,11 +22,20 @@ const Navbar = () => {
           component="h1"
           variant="h1"
           id="brittboyd"
+          textAlign={{ xs: "center", md: "left" }}
         >
           Boyd
         </Typography>
       </Grid>
-      <Grid xs={6} id="navbarcontainer">
+      <Grid
+        md={6}
+        xs={12}
+        sx={{
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "space-evenly",
+        }}
+      >
         <Typography
           fontFamily="Odibee Sans"
           component="span"

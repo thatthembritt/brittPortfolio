@@ -1,6 +1,7 @@
 import React from "react";
 import projects from "../assets/projects.json";
-import { Card, CardContent, Typography } from "@mui/material";
+import { Card, CardContent, CardMedia, Typography } from "@mui/material";
+import Grid from "@mui/material/Unstable_Grid2";
 
 const Projects = () => {
   console.log(projects);
@@ -14,29 +15,48 @@ const Projects = () => {
       >
         Projects
       </Typography>
-      {projects.map((project, index) => {
-        return (
-          <Card key={index}>
-            <CardContent id="cardBackground">
-              <Typography
-                fontFamily="Odibee Sans"
-                component="h6"
-                color="#666769"
-              >
-                {project.name}
-              </Typography>
-              <a href={project.url} target="_blank" rel="noreferrer">
-                <Typography fontFamily="Odibee Sans" color="#F3F5F9">
-                  Link
+      <Grid container>
+        {projects.map((project, index) => {
+          return (
+            <Card
+              key={index}
+              xs={11}
+              md={4}
+              lg={3}
+              sx={{
+                backgroundColor: "#121212",
+                marginX: 0.25,
+                border: 0.25,
+                borderColor: "#fcc931",
+              }}
+            >
+              <CardMedia
+                component="img"
+                height="140"
+                image={process.env.PUBLIC_URL + project.img}
+                alt={project.name}
+              />
+              <CardContent>
+                <Typography
+                  fontFamily="Odibee Sans"
+                  component="h6"
+                  color="#fcc931"
+                >
+                  {project.name}
                 </Typography>
-              </a>
-              <Typography fontFamily="Odibee Sans" color="#666769">
-                {project.description}
-              </Typography>
-            </CardContent>
-          </Card>
-        );
-      })}
+                <a href={project.url} target="_blank" rel="noreferrer">
+                  <Typography fontFamily="Odibee Sans" color="#F3F5F9">
+                    Link
+                  </Typography>
+                </a>
+                <Typography fontFamily="Odibee Sans" color="#fcc931">
+                  {project.description}
+                </Typography>
+              </CardContent>
+            </Card>
+          );
+        })}
+      </Grid>
     </>
   );
 };
