@@ -13,18 +13,10 @@ const Navbar = () => {
           component="h1"
           variant="h1"
           color="#fcc931"
+          sx={{ m: 2 }}
           textAlign={{ xs: "center", md: "left" }}
         >
-          Britt
-        </Typography>
-        <Typography
-          fontFamily="Odibee Sans"
-          component="h1"
-          variant="h1"
-          id="brittboyd"
-          textAlign={{ xs: "center", md: "left" }}
-        >
-          Boyd
+          Britt Boyd
         </Typography>
       </Grid>
       <Grid

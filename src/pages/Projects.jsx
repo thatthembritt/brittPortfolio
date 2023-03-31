@@ -7,14 +7,6 @@ const Projects = () => {
   console.log(projects);
   return (
     <>
-      <Typography
-        fontFamily="Odibee Sans"
-        component="h4"
-        variant="h3"
-        textTransform="uppercase"
-      >
-        Projects
-      </Typography>
       <Grid container>
         {projects.map((project, index) => {
           return (
@@ -25,7 +17,7 @@ const Projects = () => {
               lg={3}
               sx={{
                 backgroundColor: "#121212",
-                marginX: 0.25,
+                marginX: 2,
                 border: 0.25,
                 borderColor: "#fcc931",
               }}
@@ -46,7 +38,7 @@ const Projects = () => {
                 </Typography>
                 <a href={project.url} target="_blank" rel="noreferrer">
                   <Typography fontFamily="Odibee Sans" color="#F3F5F9">
-                    Link
+                    GitHub
                   </Typography>
                 </a>
                 <Typography fontFamily="Odibee Sans" color="#fcc931">

@@ -3,36 +3,18 @@
     "name": "Howdy Neighbor",
     "url": "https://github.com/thatthembritt/howdyNeighbor",
     "description": "Project 3 assignment for University of Denver Coding Bootcamp",
-    "img": "BrittBoyd1.jpg"
-  },
-  {
-    "name": "E-Commerce Application",
-    "url": "https://github.com/thatthembritt/eCommerceApplication",
-    "description": "In this project I built the back end for an e-commerce site.",
-    "img": "BrittBoyd1.jpg"
-  },
-  {
-    "name": "ReadMe Generator",
-    "url": "https://github.com/thatthembritt/ReadMe-Generator",
-    "description": "This project is a ReadMe generator-perfect for completing your repo!",
-    "img": "BrittBoyd1.jpg"
-  },
-  {
-    "name": "X-Men Quiz",
-    "url": "https://github.com/thatthembritt/X-Men-JavaScript-Quiz",
-    "description": "This is a timed quiz I created about my favorite comic book characters-the X-Men.",
-    "img": "BrittBoyd1.jpg"
+    "img": "howdyneighbor.png"
   },
   {
     "name": "Webaboos",
     "url": "https://jerimiahk.github.io/WEBaboos/",
     "description": "Project 1 assignment for University of Denver Coding Bootcamp",
-    "img": "BrittBoyd1.jpg"
+    "img": "webaboos.png"
   },
   {
     "name": "Guardian Guide",
     "url": "https://github.com/mo-aden/Guardian-Guide",
     "description": "Project 2 assignment for University of Denver Coding Bootcamp",
-    "img": "BrittBoyd1.jpg"
+    "img": "guardianguide.png"
   }
 ]
