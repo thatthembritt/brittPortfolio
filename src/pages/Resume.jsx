@@ -6,7 +6,13 @@ import Grid from "@mui/material/Unstable_Grid2";
 
 const Resume = () => {
   return (
-    <Grid container direction="column" alignItems="center" spacing={2}>
+    <Grid
+      container
+      direction="column"
+      alignItems="center"
+      spacing={2}
+      style={{ margin: "16px" }}
+    >
       <Grid item>
         <Button
           href={resume}
@@ -30,12 +36,25 @@ const Resume = () => {
         </Button>
       </Grid>
       <Grid item>
-        <Card>
+        <Card
+          style={{
+            backgroundColor: "#fcc931",
+            fontFamily: "Odibee Sans",
+            color: "#3f51b5",
+            textDecoration: "none",
+            cursor: "pointer",
+            backgroundColor: "#fcc931",
+            color: "black",
+            size: "small",
+            alignItems: "center",
+            margin: 2,
+          }}
+        >
           <CardContent>
             <Typography variant="h5" component="h2">
               Extracurricular Interests
             </Typography>
-            <Typography variant="body2">
+            <Typography variant="body1">
               <ul>
                 <li>Standup comedy</li>
                 <li>Piano</li>
@@ -45,12 +64,25 @@ const Resume = () => {
             </Typography>
           </CardContent>
         </Card>
-        <Card>
+        <Card
+          style={{
+            backgroundColor: "#fcc931",
+            fontFamily: "Odibee Sans",
+            color: "#3f51b5",
+            textDecoration: "none",
+            cursor: "pointer",
+            backgroundColor: "#fcc931",
+            color: "black",
+            size: "small",
+            alignItems: "center",
+            margin: 2,
+          }}
+        >
           <CardContent>
             <Typography variant="h5" component="h2">
               Education
             </Typography>
-            <Typography variant="body2">
+            <Typography variant="body1">
               <ul>
                 <li>
                   2023
@@ -72,12 +104,25 @@ const Resume = () => {
             </Typography>
           </CardContent>
         </Card>
-        <Card>
+        <Card
+          style={{
+            backgroundColor: "#fcc931",
+            fontFamily: "Odibee Sans",
+            color: "#3f51b5",
+            textDecoration: "none",
+            cursor: "pointer",
+            backgroundColor: "#fcc931",
+            color: "black",
+            size: "small",
+            alignItems: "center",
+            margin: 2,
+          }}
+        >
           <CardContent>
             <Typography variant="h5" component="h2">
               Achievements
             </Typography>
-            <Typography variant="body2">
+            <Typography variant="body1">
               <ul>
                 <li>
                   2022
